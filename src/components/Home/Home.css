@@ -1,0 +1,40 @@
+.container{
+    float: left;
+}
+.main{
+    text-align: justify;
+}
+#firstpara{
+    font-size: 20px;
+    color: aquamarine;
+}
+#secondpara{
+    color: rgba(255, 255, 255, 0.73);
+    font-size: 80px;
+    font-weight: 650;
+}
+#thirdpara{
+    color: rgba(128, 128, 128, 0.842);
+    font-size: 70px;
+    font-weight:650;
+}
+#forthpara {
+    padding-top: 2%;
+    font-size: larger;
+    width: 60%; 
+}
+#childforth{
+    display: inline;
+    color: aquamarine;
+}
+#homebtn{
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: aquamarine;
+    color: aquamarine;
+    font-size: larger;
+    margin-top: 2%;
+    width: 20%;
+    height: 20%;
+    cursor: pointer;
+}
