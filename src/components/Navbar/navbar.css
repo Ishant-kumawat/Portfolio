@@ -1,0 +1,49 @@
+.navbar{
+    height: 5rem;
+    width: 100vh;
+    display: flex;
+    margin-right: 3%;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;  
+    float: right;
+    background-color: #1f2833;
+    border-radius: 8px;
+}
+.navlist    {
+    margin: 1rem;
+    cursor: pointer;
+    display: flex;
+    color: whitesmoke;
+ 
+}
+.navbtn{
+    float: right;
+    background-color: transparent;
+    height: 50%;
+    width: 15%;
+    text-decoration: none;
+    border-radius: 5px;
+    border-color: aquamarine;
+    color: aquamarine;
+    cursor: pointer;
+    transition:0.5s ease-out;
+}
+.navbtn:hover{
+ background-color: #1f2833;
+ 
+}
+.navmenu{
+    display: flex;
+}
+#point{
+    color: aquamarine;
+    padding-right: 9px;
+}
+.navlist:hover{
+    color: aquamarine;
+    border-bottom: 2px solid aquamarine;
+    border-radius: 4px;
+}
+

@@ -1,0 +1,58 @@
+.socialcontainer {
+  margin-left: 2%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.socialcontainer img {
+  margin: 1%;
+  cursor: pointer;
+}
+
+
+.vertical-line {
+  width: 2px;
+  background-color: grey; 
+  height: 38%;
+  position: absolute;
+  left: 50%; 
+  top: 0;
+  bottom: 0;
+  transform: translateX(-50%); 
+}
+
+.socialdiv2 {
+writing-mode: vertical-lr; 
+position: fixed;
+color: aquamarine;
+margin-left: 94.5%;
+top: 44%;
+
+}
+
+
+.vertical-line2 {
+  display: flex;
+  width: 2px;
+  background-color:gray; 
+  height: 30%; 
+  position: fixed;
+  left: 95%; 
+  bottom: 0; 
+  transform: translateX(-50%); 
+}
+.social-link {
+  margin: 2px;
+  background-color: rgba(128, 128, 128, 0.532);
+  border-radius: 60%;
+  transition: 0.9s ease-in-out;
+}
+
+.social-link:hover {
+  background-color: aquamarine; 
+}
+
+
