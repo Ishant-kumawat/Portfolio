@@ -1,7 +1,20 @@
 import './hireme.css'
-import React from 'react'
+import React, { useRef } from 'react'
+import emailjs from '@emailjs/browser';
 
 const Hireme = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_bqee4du', 'template_0djgur1', form.current, '0w9dmPnqg5fjYsfGV')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return <>
   <div className='container'>
   <div>
@@ -10,17 +23,14 @@ const Hireme = () => {
   <div className='contactfrom'>
     <h1 id='head'>Hire Me</h1>
     <p id='contactmsg'>I'm a Web Developer/FullStack with one years of experience in Angular, React, Asp.net, MsSql, MySql, Azure. Throughout my career, I've had the privilege of working with Kanini Software Solutions, where I've honed my skills and gained valuable insights.</p>
-    <form className='contactform'>
-    <label>Name</label>    
-    <input type='text'></input>
-    <br></br>
-    <label>Email</label>
-    <input type='email'></input>
-    <br></br>
-    <label>Message</label>
-    <textarea placeholder='Message'></textarea>
-    <br></br>
-    <button id='submit'>Submit</button>
+    <form ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="user_name" /><br />
+      <label>Email</label>
+      <input type="email" name="user_email" /><br /> 
+      <label id='message'>Message</label>
+      <textarea name="message" />
+      <input id='submit' type="submit" value="Send" />
     </form>
   </div>
   </div>
