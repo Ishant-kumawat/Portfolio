@@ -10,7 +10,8 @@ const Home = () => {
                 <p id='thirdpara'>I build things for the web.</p>
                 <p id='forthpara'>I'm a Software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on
                     building accessible, human-centered products at <span id='childforth'>Upstatement</span> .</p>
-                    <button id='homebtn'>Check out My cousre !</button>
+                    <div className='homebtn' ><button id='homebtn'>Check out My cousre !</button>
+                    <span id='homespan'></span></div>    
             </p>
         </div>
     )

@@ -11,7 +11,11 @@ const Navbar = () => {
    <Link className='navlist'><p id='point'>03.</p>Work</Link>
    <Link className='navlist'><p id='point'>04.</p>Contact</Link>
    </div>
-    <button className='navbtn'>Resume</button>
+   <div id='navbtn'>
+   <button className='navbtn'>Resume</button>
+   <span id='navspan'></span>
+   </div>
+    
   </nav>
   )
 }

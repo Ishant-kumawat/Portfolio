@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     height: 5rem;
     width: 100vh;
     display: flex;
@@ -6,44 +6,70 @@
     justify-content: space-between;
     align-items: center;
     position: sticky;
-    top: 0;  
+    top: 0;
     float: right;
     background-color: #1f2833;
     border-radius: 8px;
 }
-.navlist    {
+
+.navlist {
     margin: 1rem;
     cursor: pointer;
     display: flex;
     color: whitesmoke;
- 
+    transition: 0.2s ease-out;
 }
-.navbtn{
+
+.navbtn {
     float: right;
-    background-color: transparent;
-    height: 50%;
-    width: 15%;
+    background-color: #1f2833;
+    height: 100%;
+    width: 100%;
     text-decoration: none;
     border-radius: 5px;
     border-color: aquamarine;
     color: aquamarine;
     cursor: pointer;
-    transition:0.5s ease-out;
+    transition: 0.2s ease-out;
+    position: relative;
 }
-.navbtn:hover{
- background-color: #1f2833;
- 
-}
-.navmenu{
+
+.navmenu {
     display: flex;
 }
-#point{
+
+#point {
     color: aquamarine;
     padding-right: 9px;
 }
-.navlist:hover{
+
+.navlist:hover {
     color: aquamarine;
-    border-bottom: 2px solid aquamarine;
+    border-bottom: 3px solid aquamarine;
     border-radius: 4px;
 }
 
+#navbtn {
+    height: 50%;
+    width: 15%;
+    position: relative;
+}
+
+#navspan {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: aquamarine;
+    z-index: -1;
+    border-radius: 5px;
+    transition: 0.2s ease-out;
+}
+
+.navbtn:hover {
+    transform: scale(1) translatex(-5px);
+}
+
+#navbtn:hover #navspan {
+    transform: scale(1) translateY(4px);
+    margin-top: 0.1px;
+}
