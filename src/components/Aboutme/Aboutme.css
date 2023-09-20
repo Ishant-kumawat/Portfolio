@@ -98,10 +98,9 @@ li::before {
 .imgdiv:hover .hover-overlay {
   border: 2px solid aquamarine;
   transform: scale(1) translateX(5px);
-
 }
 
 .imgdiv:hover .img-about {
-  transform: scale(1) translateX(-10px);
+  transform: scale(1) translateX(-5px);
   z-index: 0;
 }
