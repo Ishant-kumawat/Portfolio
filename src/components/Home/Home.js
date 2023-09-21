@@ -3,7 +3,7 @@ import './Home.css'
 
 const Home = () => {
     return (
-        <div className='container'>
+        <div className='containerhome'>
             <p className='main'>
                 <p id='firstpara'>Hi, my name is</p>
                 <p id='secondpara'>Ishant Kumawat.</p>
@@ -13,6 +13,7 @@ const Home = () => {
                     <div className='homebtn' ><button id='homebtn'>Check out My cousre !</button>
                     <span id='homespan'></span></div>    
             </p>
+           
         </div>
     )
 }

@@ -6,8 +6,11 @@ import linkedin from '../../assests/img/linkedin.png';
 
 const Socialsites = () => {
   return <>
-<div className='socialcontainer'>
-  <a href="https://www.github.com" className="social-link">
+
+
+  <div className="vertical-line">
+    <div className='socaildiv1'>
+    <a href="https://www.github.com" className="social-link">
     <img src={github} alt="GitHub" />
   </a>
   <a href="https://www.facebook.com" className="social-link">
@@ -16,9 +19,11 @@ const Socialsites = () => {
   <a href="https://www.linkedin.com" className="social-link">
     <img src={linkedin} alt="LinkedIn" />
   </a>
-  <div className="vertical-line"></div>
-</div>
+    </div>
 
+  </div>
+
+ 
     
     <div className='socialdiv2'><p>Created : Ishant Kumawat</p> </div>
       <div className="vertical-line2">  </div>
