@@ -1,0 +1,53 @@
+.Agency {
+
+    margin-left: 25%;
+    width: 50%;
+    height: 100%;
+    text-align: left;
+}
+
+#AgencySpan {
+    color: aquamarine;
+    margin: 1%;
+}
+
+.agencypara {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.agencyspan1 {
+
+    width: 3px;
+    height: 5%;
+    background-color: aquamarine;
+    margin: 2%;
+}
+
+.agencydetails {
+    margin-top: 6%;
+    display: flex;
+}
+#span1{
+    color: aquamarine;
+
+}
+.details{
+    font-size: larger;
+}
+#duration{
+    color: gray;
+    font-size:small;
+}
+.detailslist{
+ list-style:square;
+ color: orange;
+}
+
+#lidetails{
+    margin: 5%;
+}
+.agencyname{
+    color: aquamarine;
+    width: 60%;
+}

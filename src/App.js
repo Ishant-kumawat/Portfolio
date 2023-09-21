@@ -6,6 +6,9 @@ import Navbar from './components/Navbar/navbar';
 import Hireme from './components/hireme/hireme';
 import Socialsites from './components/social-sites/Socialsites';
 import DotLoader from 'react-spinners/DotLoader';
+import Agency from './components/Agency/Agency';
+import Project from './components/Projects/Project';
+
 
 function App() {
   const [loading, setloading] = useState(false);
@@ -32,8 +35,11 @@ function App() {
           <Navbar />
           <Home />
           <Aboutme />
+          <Agency/>
+          <Project/>
           <Hireme />
           <Socialsites />
+         
         </>
       )}
     </div>
