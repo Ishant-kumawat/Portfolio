@@ -9,16 +9,31 @@ import DotLoader from 'react-spinners/DotLoader';
 import Agency from './components/Agency/Agency';
 import Project from './components/Projects/Project';
 
-
 function App() {
-  const [loading, setloading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setloading(true)
-    setInterval(() => {
-      setloading(false)
-    }, 8000);
-  }, [])
+    const delay = 2000; 
+    const timer = setTimeout(() => {
+      setLoading(!navigator.onLine);
+    }, delay);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const handleOnlineStatusChange = () => {
+      setLoading(!navigator.onLine);
+    };
+
+    window.addEventListener('online', handleOnlineStatusChange);
+    window.addEventListener('offline', handleOnlineStatusChange);
+
+    return () => {
+      window.removeEventListener('online', handleOnlineStatusChange);
+      window.removeEventListener('offline', handleOnlineStatusChange);
+    };
+  }, []);
 
   return (
     <div className="App">
@@ -35,11 +50,10 @@ function App() {
           <Navbar />
           <Home />
           <Aboutme />
-          <Agency/>
-          <Project/>
+          <Agency />
+          <Project />
           <Hireme />
           <Socialsites />
-         
         </>
       )}
     </div>

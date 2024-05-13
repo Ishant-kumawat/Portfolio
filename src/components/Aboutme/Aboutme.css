@@ -46,11 +46,12 @@ h1 {
 }
 
 .listabout li::before {
-  content: "▶";
+  content: '\21FE';
   display: inline-block;
   margin-right: 2%;
   color: aquamarine;
 }
+
 
 #hrtag {
   color: rgb(33, 147, 147);

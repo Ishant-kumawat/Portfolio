@@ -17,7 +17,7 @@
     cursor: pointer;
     display: flex;
     color: whitesmoke;
-    transition: 0.2s ease-out;
+    transition: 0.1s ease-out;
 }
 
 .navbtn {
